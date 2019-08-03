@@ -1,0 +1,155 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+.content_jone img {
+    margin-bottom: 10px;
+}
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+   /*Header part*/ 
+.main_menu ul li a {
+    padding: 30px 13px;
+}
+    /*Banner*/
+    .banner_content h1 {
+    font-size: 45px;
+}
+.banner_content p {
+    font-size: 18px;
+    line-height: 28px;
+}    
+   /*Service*/
+    .service_content h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+    /*Notify*/
+    
+input.form-control {
+    height: 40px;
+    width: 220px;
+}
+.btn {
+    padding: 13px 45px;
+}   
+/*jone hunt*/
+.content_jone p {
+    font-size: 16px;
+} 
+.content_jone img {
+    margin-bottom: 10px;
+}
+  /*Touch*/
+.touch_content h3 {
+    font-size: 20px;
+}
+ /*Footer*/
+.footer_content ul li a {
+    padding: 3px;
+}
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+   /*Logo*/
+.logo img {
+    margin-bottom: -10px;
+}
+    /*Banner Part*/
+.banner_content h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 100px;
+}
+    .banner_icon {
+    margin-bottom: 100px;
+}
+.banner_content p {
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+}    
+.banner_icon ul li a {
+    font-size: 25px;
+    margin-left: 25px;
+}    
+    /*Servic Part*/
+    .service_area {
+    padding: 40px 0;
+}
+    .service_content h3 {
+    font-size: 18px;
+}
+    .service_content i {
+    font-size: 30px;
+
+}
+   /*Notify update*/
+.notify_update {
+    padding: 40px 0;
+}
+ .content_update h3 {
+    font-size: 18px;
+    text-align: center;
+}   
+p {
+    text-align: center;
+}   
+ input.form-control {
+    height: 35px;
+    width: 215px;
+     margin-bottom: 25px;
+}  
+.btn {
+    padding: 11px 16px;
+    margin-left: -24px;
+}
+  /*Jone Hunt*/
+.jone_hunt {
+    padding: 40px 0;
+}
+.content_jone img {
+    margin-bottom: 10px;
+}
+    /*Touch Part*/
+.touch_content h3 {
+    font-size: 18px;
+}
+ .touch_content i {
+    font-size: 18px;
+} 
+.touch_area {
+margin-bottom: 40px;
+}
+    /*Footer*/
+.footer_content ul li a {
+    padding: 8px;
+}
+.footer_area {
+    padding: 40px 0;
+}
+    
+    
+    
+    
+    
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

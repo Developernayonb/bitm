@@ -1,0 +1,421 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700&display=swap');
+ body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+	color: #222;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+	color: #848484;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+    -moz-user-select: none;
+    background: #2ecc71 none repeat scroll 0 0;
+    border-radius: 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 18px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: -50px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -5px;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2ecc71;
+	color: #fff
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #2ecc71;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+
+/*============ Header Code CSS Part Start =============== */
+.header_area {
+    background: #2ecc71;
+}
+.main_menu ul li {
+    display: inline;
+}
+.main_menu ul li a {font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    display: inline-block;
+    padding: 30px 25px;
+    text-transform: uppercase;
+    transition: .5s;
+    }
+.main_menu ul li a:hover{
+    color: #d4d4d4;
+}
+.header-sticky.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 5px solid #848484;
+}
+/*============ Banner CSS Part Start =============== */
+.banner1{
+    background-image: url(../images/slider.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.banner_content h1 {
+    margin-top: 160px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+.banner_content p {
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: 30px;
+        line-height: 35px;
+}
+.banner_icon {
+    margin-bottom: 161px;
+}
+.banner_icon ul li {
+    display: inline;
+}
+
+.banner_icon ul li a {
+    font-size: 35px;
+    padding: 3px 10px;
+    color: #fff;
+    background: #37241b;
+    border-radius: 100%;
+    transition: .5s;
+}
+.banner_icon ul li a:hover{
+    background: #2ecc71;
+}
+.owl-dot {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #2ecc71;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+.owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    text-align: center;
+    z-index: 99;
+}
+.owl-dot.active {
+    background: #2ecc71;
+}
+/*============ Service_area CSS Part Start =============== */
+.service_area {
+    padding: 60px 0;
+}
+.service_content i {
+    background: #2ecc71;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px 20px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.service_content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/*============ notify_update CSS Part Start =============== */
+.notify_update{
+    padding: 60px 0;
+    background-color: #e3e3e3;
+}
+.content_update h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+input.form-control {
+    height: 50px;
+    width: 300px;
+    display: inline;
+    border-radius: 15px;
+}
+/*============ jone_hunt CSS Part Start =============== */
+.jone_hunt{
+    padding: 60px 0;
+}
+.content_jone p {
+    font-size: 15px;
+}
+.content_jone h5 {
+    color: #2e2e2e;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/*============ touch_area CSS Part Start =============== */
+.touch_area{
+    margin-bottom: 60px;
+}
+.touch_content h3 {
+    font-size: 24px;
+    color: #000;
+}
+.touch_content i {
+    background: #d4d4d4;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 1000%;
+    color: #fff;
+    transition: .5s;
+}
+.touch_content i:hover{
+   background: #2ecc71; 
+}
+/*============ Footer CSS Part Start =============== */
+.footer_area {
+    background: #e3e3e3;
+    padding: 60px 0;
+}
+
+.footer_content ul li {
+    display: inline;
+}
+
+.footer_content ul li a {
+    color: #848484;
+    padding: 16px;
+}
