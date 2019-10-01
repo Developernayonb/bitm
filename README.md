@@ -3,4 +3,4 @@ bitm
 
 
 
-https://mdnayonbabujibon.github.io/bitm/.
+https://developernayonb.github.io/bitm/
